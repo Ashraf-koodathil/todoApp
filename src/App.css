@@ -1,11 +1,14 @@
 
 .container {
-    border: 1px solid blue;
+    border: 1px solid #ffffff;
     padding: 30px 20px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 18px;
+    color: white;
+   
+    
 }
 
 .title h1 {
@@ -16,6 +19,8 @@
 
 .todo-list input {
     border: none;
+    font-size: 16px;
+    color: black;
 }
 .todo-list input:focus {
     outline: none;
@@ -25,12 +30,27 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
-    border: 1px solid blue;
+    border: 1px solid white;
     padding: 5px;
     margin-bottom: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+
 }
 
-.fa-trash {
-    color: white;
-    background-color: green;
+.todo-list {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid white;
+    padding: 10px 16px;
+    width:280px;
+    border-radius: 8px;
+    background-color: white;
 }
+
+.fa-plus {
+    color: black;
+}
+

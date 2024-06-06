@@ -11,9 +11,11 @@ function App() {
     }
 
     function addTodo() {
+
         taskMange([...task, newIn])
         console.log(task);
         newTask('')
+        
     }
 
     function deleteTask(index) {
@@ -38,7 +40,7 @@ function App() {
                             return (
                                 <li  className='list' key={index}>
                                     <span> {item} </span>
-                                    <button onClick={ () => deleteTask(index)}><i class="fa-solid fa-trash" style={{color: "#000000;"}}></i></button>
+                                    <button onClick={ () => deleteTask(index)}><i class="fa-solid fa-trash"></i></button>
                                 </li>
                             )
                         })
