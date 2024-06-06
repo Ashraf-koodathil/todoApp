@@ -1,1 +1,36 @@
 
+.container {
+    border: 1px solid blue;
+    padding: 30px 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.title h1 {
+    font-size:  26px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.todo-list input {
+    border: none;
+}
+.todo-list input:focus {
+    outline: none;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border: 1px solid blue;
+    padding: 5px;
+    margin-bottom: 12px;
+}
+
+.fa-trash {
+    color: white;
+    background-color: green;
+}

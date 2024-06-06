@@ -28,17 +28,17 @@ function App() {
                 <h1>Todo List</h1>
             </div>
             <div className="todo-list">
-                <input value={newIn} onChange={initialvlue} type="text" placeholder='Enter a task...' />
-                <button onClick={addTodo}>Add</button>
+                <input value={newIn} onChange={initialvlue} type="text" placeholder='What is the task today' />
+                <i onClick={addTodo} class="fa-solid fa-plus" style={{color: "#000000;"}}></i>
             </div>
             <div>
                 <ul>
                     {
                         task.map((item, index) => {
                             return (
-                                <li key={index}>
+                                <li  className='list' key={index}>
                                     <span> {item} </span>
-                                    <button onClick={ () => deleteTask(index)}>Delete</button>
+                                    <button onClick={ () => deleteTask(index)}><i class="fa-solid fa-trash" style={{color: "#000000;"}}></i></button>
                                 </li>
                             )
                         })
